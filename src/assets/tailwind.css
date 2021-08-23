@@ -3,3 +3,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+    .row {
+        @apply flex flex-wrap w-row -mx-4;
+    }
+}
