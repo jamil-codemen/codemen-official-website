@@ -1,13 +1,15 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 import OurTeam from '../views/OurTeam.vue'
-import ContactUs from '../views/ContactUs.vue'
+import homepage from "../components/Pages/homepage.vue"
+import aboutus from "../components/Pages/aboutus.vue"
+import ContactUs from "./../views/ContactUs.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: homepage
   },
   {
     path: '/ourteam',
@@ -16,17 +18,22 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/contact-us',
-    name: 'ContactUs',
+    name: 'contactUs',
     component: ContactUs
   },
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    component: aboutus
+  },
+  // {
+  //   path: '/about',
+  //   name: 'About',
+  //   // route level code-splitting
+  //   // this generates a separate chunk (about.[hash].js) for this route
+  //   // which is lazy-loaded when the route is visited.
+  //   component: () => import(/* webpackChunkName: "about" */ '../components/Pages/aboutus.vue')
+  // }
 ]
 
 const router = createRouter({
@@ -35,3 +42,4 @@ const router = createRouter({
 })
 
 export default router
+
