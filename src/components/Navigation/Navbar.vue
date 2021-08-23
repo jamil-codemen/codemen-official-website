@@ -47,11 +47,11 @@
                     </svg>
                 </button>
                 </div>
-                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-                    <a class="p-4 md:bg-transparent bg-cst-color  mt-0 text-green-500  text-base lg:px-4 lg:py-2 md:hover:bg-transparent hover:bg-gray-900 md:mt-2 font-semibold  lg:mt-0 hover:text-green-500 focus:text-green-500 focus:outline-none focus:shadow-outline uppercase " href="/">Home</a>
-                    <a class="p-4 md:bg-transparent bg-cst-color  mt-0 text-white text-base  lg:px-4 lg:py-2 md:hover:bg-transparent hover:bg-gray-900 md:mt-2 font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-green-500 focus:text-green-500 focus:outline-none focus:shadow-outline uppercase " href="about.html">About Us</a>
-                    <a class="p-4 md:bg-transparent bg-cst-color  mt-0 text-white text-base  lg:px-4 lg:py-2 md:hover:bg-transparent hover:bg-gray-900 md:mt-2 font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-green-500 focus:text-green-500 focus:outline-none focus:shadow-outline uppercase " href="team.html">Our Team</a>
-                    <a class="p-4 md:bg-transparent bg-cst-color  mt-0 text-white text-base  lg:pl-4 lg:py-2 md:hover:bg-transparent hover:bg-gray-900 md:mt-2 font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-green-500 focus:text-green-500 focus:outline-none focus:shadow-outline uppercase " href="contact_us.html">Contact Us</a>
+                <nav class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                    <router-link to="/" class="p-4 md:bg-transparent bg-cst-color  mt-0 text-green-500  text-base lg:px-4 lg:py-2 md:hover:bg-transparent hover:bg-gray-900 md:mt-2 font-semibold  lg:mt-0 hover:text-green-500 focus:text-green-500 focus:outline-none focus:shadow-outline uppercase " href="#">Home</router-link>
+                    <router-link to="/" class="p-4 md:bg-transparent bg-cst-color  mt-0 text-white text-base  lg:px-4 lg:py-2 md:hover:bg-transparent hover:bg-gray-900 md:mt-2 font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-green-500 focus:text-green-500 focus:outline-none focus:shadow-outline uppercase " href="#">About Us</router-link>
+                    <router-link to="/ourteam" class="p-4 md:bg-transparent bg-cst-color  mt-0 text-white text-base  lg:px-4 lg:py-2 md:hover:bg-transparent hover:bg-gray-900 md:mt-2 font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-green-500 focus:text-green-500 focus:outline-none focus:shadow-outline uppercase " href="#">Our Team</router-link>
+                    <router-link to="/contact-us" class="p-4 md:bg-transparent bg-cst-color  mt-0 text-white text-base  lg:pl-4 lg:py-2 md:hover:bg-transparent hover:bg-gray-900 md:mt-2 font-semibold bg-transparent lg:mt-0 lg:ml-4 hover:text-green-500 focus:text-green-500 focus:outline-none focus:shadow-outline uppercase " href="#">Contact Us</router-link>
                     
                 </nav>
             </div>

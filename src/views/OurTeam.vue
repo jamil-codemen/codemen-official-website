@@ -1,7 +1,7 @@
 <template>
    <div class="bradclumb relative py-32">
         <div class="bg-center bg-gray-800"></div>
-        <img src="" alt="image1" class="object-cover w-full h-full absolute top-0 left-0">
+        <img src="../assets/images/bg-wide2.jpg" alt="image1" class="object-cover w-full h-full absolute top-0 left-0">
         <div class="container relative z-10 mx-auto md:px-6 px-4 flex flex-wrap items-center justify-center">
             <div class="slide-content flex sm:text-left justify-center 2xl:w-1/3 xl:w-2/3 sm:w-1/2 w-ful sm:mt-0 mt-32">
                 <div class="">
