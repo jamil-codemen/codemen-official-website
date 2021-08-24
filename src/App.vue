@@ -1,8 +1,9 @@
 <template>
-  <Navbar />
-  <aboutus />
+
+    <Navbar />
   <router-view/>
   <Footer />
+
 </template>
 
 <style>
