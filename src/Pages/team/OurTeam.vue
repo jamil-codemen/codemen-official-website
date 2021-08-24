@@ -1,8 +1,4 @@
 <template>
-<<<<<<< HEAD:src/components/Pages/team/OurTeam.vue
-=======
-
->>>>>>> tasnuva:creat custom reusable headline component & homepage sections:src/Pages/team/OurTeam.vue
     <headline imgSource="bg-wide2.jpg" currentPageName="Our Team" currentLink="/ourteam"></headline>
 <section id="our_team" class="md:px-24 px-0 py-24">
         <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
