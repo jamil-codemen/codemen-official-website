@@ -2,28 +2,7 @@
     <!--=================================================
         Start Bradclumb
     ==================================================-->
-    <div class="bradclumb relative py-32">
-        <div class="bg-center bg-gray-800"></div>
-        <img src="../../assets/images/contact-bg.jpg" alt="image1"
-            class="object-cover w-full h-full absolute top-0 left-0">
-        <div class="container relative z-10 mx-auto md:px-6 px-4 flex flex-wrap items-center justify-center">
-            <div class="slide-content flex sm:text-left justify-center 2xl:w-1/3 xl:w-2/3 sm:w-1/2 w-ful sm:mt-0 mt-32">
-                <div class="">
-                    <nav class="">
-                        <ol class="breadcrumb flex flex-wrap justify-center font-medium text-xl">
-                            <li class="breadcrumb-item text-white"><a href="index.html">Home</a></li>
-                            <span class="px-2 text-white">/</span>
-                            <li class="breadcrumb-item text-green-500  active:text-green-500 " aria-current="page">About
-                                Us</li>
-                        </ol>
-                    </nav>
-                    <h1 class="md:leading-tight title md:text-7xl text-4xl font-black text-white mt-1.5">
-                        About Us
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
+        <headline imgSource="contact-bg.jpg" currentLink="/about" currentPageName="About Us"></headline>
 
     <!--=================================================
         End Bradclumb
@@ -219,7 +198,7 @@
                         </div>
                     </div>
                     <div class="md:w-1/2 w-full md:h-full md:absolute md:top-0 md:right-0">
-                        <img src="../../assets/images/about-4.jpg" alt="" class="w-full md:h-full object-cover object-top">
+                        <img src="../../../assets/images/about-4.jpg" alt="" class="w-full md:h-full object-cover object-top">
                     </div>
                 </div>
             </div>
@@ -250,7 +229,7 @@
                 <div class="text-center mt-6">
                     <div class="relative flex items-center justify-center">
                         <a href="https://vimeo.com/222990241" class="">
-                            <img src="../../assets/images/video-1.jpg" class="fit-image" alt="Introduction Video">
+                            <img src="../../../assets/images/video-1.jpg" class="fit-image" alt="Introduction Video">
                         </a>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 sm:h-40 sm:w-40 text-green-500 absolute" viewBox="0 0 20 20" fill="currentColor">
   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
@@ -270,9 +249,12 @@
          End Video section
     ================================================= -->
 </template>
-<script>
+<script lang="ts">
+import Headline from '@/components/headline/Headline.vue'
+
 export default {
-    name:"aboutus"
+  components: { Headline },
+    name:"About"
 }
 </script>
 <style scoped>
