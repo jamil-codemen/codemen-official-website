@@ -9,10 +9,10 @@
               
           <div class="ml-auto">
             <ul class="flex space-x-10">
-              <li class="uppercase font-bold text-xl text-green-600"><a href="default.asp">Home</a></li>
-              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><a href="news.asp">News</a></li>
-              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><a href="contact.asp">Contact</a></li>
-              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><a href="about.asp">About</a></li>
+              <li class="uppercase font-bold text-xl text-green-600"><router-link to="default.asp">Home</router-link></li>
+              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><router-link to="">News</router-link></li>
+              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><router-link to="">Contact</router-link></li>
+              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><router-link to="">About</router-link></li>
             </ul>
           </div>
         </div>
@@ -29,10 +29,10 @@
         <div class="">   
           <div class="">
             <ul class="">
-              <li class="uppercase font-bold text-xl text-green-600"><a href="default.asp">Home</a></li>
-              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><a href="news.asp">News</a></li>
-              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><a href="contact.asp">Contact</a></li>
-              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><a href="about.asp">About</a></li>
+              <li class="uppercase font-bold text-xl text-green-600"><router-link to="default.asp">Home</router-link></li>
+              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><router-link to="">News</router-link></li>
+              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><router-link to="">Contact</router-link></li>
+              <li class="uppercase font-bold text-xl text-white hover:text-green-600"><router-link to="">About</router-link></li>
             </ul>
           </div>
           
