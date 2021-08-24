@@ -198,7 +198,7 @@
                         </div>
                     </div>
                     <div class="md:w-1/2 w-full md:h-full md:absolute md:top-0 md:right-0">
-                        <img src="../../../assets/images/about-4.jpg" alt="" class="w-full md:h-full object-cover object-top">
+                        <img src="../../assets/images/about-4.jpg" alt="" class="w-full md:h-full object-cover object-top">
                     </div>
                 </div>
             </div>
@@ -229,7 +229,7 @@
                 <div class="text-center mt-6">
                     <div class="relative flex items-center justify-center">
                         <a href="https://vimeo.com/222990241" class="">
-                            <img src="../../../assets/images/video-1.jpg" class="fit-image" alt="Introduction Video">
+                            <img src="../../assets/images/video-1.jpg" class="fit-image" alt="Introduction Video">
                         </a>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 sm:h-40 sm:w-40 text-green-500 absolute" viewBox="0 0 20 20" fill="currentColor">
   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
@@ -252,10 +252,6 @@
 <script lang="ts">
 import Headline from '@/components/headline/Headline.vue'
 
-<<<<<<< HEAD:src/components/Pages/about/About.vue
-=======
-
->>>>>>> tasnuva:creat custom reusable headline component & homepage sections:src/Pages/about/About.vue
 export default {
   components: { Headline },
     name:"About"
