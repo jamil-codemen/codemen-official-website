@@ -1,91 +1,8 @@
 <template>
    <div class="">
      <top-banner></top-banner>
-    <!--=================================================
-         Start Language  section
-    ================================================= -->
-    <!-- <section id="platform" class="md:px-24 px-0 py-24">
-        <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
-            <div class="">
-                <div class="title text-center">
-                    <div class="w-full space-y-6">
-                        <h2 class="font-bold text-4xl text-gray-800">We Are <span class="prm-color rounded text-white px-4 pb-4 pt-2">Expert</span></h2>
-                        <p class="text-gray-700">We work intensively in search of ideals that can add up in the lives of our customers. <br>This is what moves us and we are grateful for the recognition.</p>
-                    </div>
-                </div> 
-                <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-4 gap-2">   
-                    <div class="group mt-16 ">
-                        <a href="#" class="flex items-center flex-col hover:bg-green-500 bg-gray-50 border-green-500 border p-10 rounded cursor-pointer">
-                            <img src="../../../assets/images/go.png" class="filter" alt="">
-                            <span class="font-semibold text-3xl group-hover:text-white">Go Lang</span>
-                        </a>            
-                    </div>  
-                    <div class="group mt-16 ">
-                        <a href="#" class="flex items-center flex-col hover:bg-green-500 bg-gray-50 border-green-500 border p-10 rounded cursor-pointer">
-                            <img  src="../../../assets/images/vuejs.png" class="filter" alt="">
-                            <span class="font-semibold text-3xl group-hover:text-white">Vue JS</span>
-                        </a>            
-                    </div>  
-                    <div class="group mt-16">
-                        <a href="#" class="flex items-center flex-col hover:bg-green-500 bg-gray-50 border-green-500 border p-10 rounded cursor-pointer">
-                            <img  src="../../../assets/images/laravel.png" class="filter" alt="">
-                            <span class="font-semibold text-3xl group-hover:text-white">Laravel</span>
-                        </a>            
-                    </div>  
-                </div>  
-                <div class="pt-16 flex flex-wrap justify-center">
-                    <button class="hover:bg-gray-900 py-4 pl-8 pr-2 rounded flex flex-wrap justify-center  sm:w-52 w-full bg-green-500 font-bold text-white items-center">
-                        <a class="mr-6 md:text-lg leading-8" href="javascript:;">See More</a>                            
-                    </button>
-                </div>                        
-            </div>
-        </div>
-    </section> -->
-    <!--=================================================
-         End Language  section
-    ================================================= -->
-
-
-    <!--=================================================
-         Start About us section
-    ================================================= -->
-    <!-- <section id="about" class="section-1 bg-green-100 py-24">
-        <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
-            <div class="w-full flex flex-wrap">
-                <div class="lg:w-1/2 w-full align-self-top sm:order-1 order-2 sm:text-left text-center">
-                    <div class="row intro m-0">
-                        <div class="w-full p-0">
-                            <div class="flex flex-wrap sm:justify-start justify-center">
-                                <p class="top-content uppercase text-green-500 font-bold text-lg py-4">codemen.org</p>
-                            </div>
-                            <h2 class="uppercase md:leading-tight title text-4xl font-black  mt-1.5"><span class="prm-color rounded px-4 pb-3 pt-2"><span class="text-white" >Who</span></span> We Are</h2>
-                        </div>
-                    </div>
-                    <div class="pt-8">
-                        <div class="text-gray-700">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras iaculis diam varius diam ultricies lacinia. <b>Mauris lacus tellus, ultrices eu volutpat sit amet, finibus a ipsum.</b> Nullam sit amet pretium felis.</p>
-                            <p class="pt-4">Curabitur convallis, diam a egestas iaculis, neque lorem interdum felis, in viverra lacus tortor in leo.</p>
-                            <p class="pt-">Donec tristique diam id mi venenatis facilisis eget sed mi. Phasellus malesuada nulla diam, a dignissim quam congue et.</p>
-                            <p><b>Cras sem ante, accumsan quis sem sed, rutrum varius nunc.</b></p>
-                        </div>
-                    </div>
-                    <div class="pt-8 flex flex-wrap">
-                        <button class="hover:bg-gray-900 py-4 pl-8 pr-2 rounded flex flex-wrap justify-center  sm:w-52 w-full bg-green-500 font-bold text-white items-center">
-                            <a class="mr-6 md:text-lg leading-8" href="javascript:;">Read More</a>                            
-                        </button>
-                    </div>  
-                </div>
-                <div class="lg:w-1/2 w-full sm:order-2 order-1">
-                    <div class="sm:justify-items-end justify-center grid">
-                        <img src="../../../assets/images/WebDesignDevelopmentVector.png" alt="" class="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--=================================================
-         End About us section
-    ================================================= -->
+    <expert-section></expert-section>
+    <about-us-section></about-us-section>
 
       <!--=================================================
          Start Our Team section
@@ -182,11 +99,14 @@
 </template>
 <script>
 import CustomButton from '@/components/button/CustomButton.vue'
-import TopBanner from './components/TopBanner.vue'
+import TopBanner from './sections/TopBanner.vue'
+import SkillCard from './components/SkillCard.vue'
+import ExpertSection from './sections/ExpertSection.vue'
+import AboutUsSection from './sections/AboutUsSection.vue'
 
 
 export default {
-  components: { CustomButton, TopBanner },
+  components: { CustomButton, TopBanner, SkillCard, ExpertSection, AboutUsSection },
     name:"homepage",
     
 }
