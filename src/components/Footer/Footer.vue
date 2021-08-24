@@ -49,8 +49,8 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="mt-12 cursor-pointer border rounded text-center w-full p-4 group border-green-500 hover:bg-green-500">
-                                <a href="contact_us.html" class="text-white btn outline-button smooth-anchor block">GET IN TOUCH</a>
+                            <div class="mt-12 w-full">
+                                <custom-button buttonClass="group border-green-500 hover:bg-green-500 border  font-bold text-white block" isLink=true content="GET IN TOUCH"></custom-button>
                             </div>
                         </div>
                        <div class="w-full md:w-1/2 lg:w-1/4 px-4">
@@ -186,8 +186,10 @@
 
 </style>
 <script>
+import CustomButton from '../button/CustomButton.vue'
 
 export default {
+  components: { CustomButton },
     name:"Footer"
 }
 </script>
