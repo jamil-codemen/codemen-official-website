@@ -2,9 +2,9 @@
            <div id="footer" class="footer">
             <div class="bg-center relative bg-gray-800">
                 <img class="w-full h-full absolute top-0 left-0 z-10" src="../../assets/images/bg-7.jpg" alt="">
-                <div class="container max-w-screen-xl mx-auto py-40 relative z-20">
-                    <div class="row mx-auto">
-                        <div class="logo-sec w-full md:w-1/2 lg:w-1/4 px-4">
+                <div class="container max-w-screen-xl mx-auto py-40 relative z-20 px-4">
+                    <div class="row">
+                        <div class="w-full md:w-1/2 lg:w-1/4 px-4">
                             <div class="mb-8">
                                 <a href="#" class="">
                                     <img src="../../assets/images/codemen-logo2.png" alt="" srcset="">

@@ -2,10 +2,12 @@
         <!--=================================================
         Start Hero Banner
     ==================================================-->    
-    <div class="sliders relative">        
+   <div class="">
+        <div class="relative">        
             <img src="../../assets/images/bg-5.jpg" alt="image1" class="object-cover w-full h-full absolute top-0 left-0">
-        <div class="container relative z-10 mx-auto md:px-6 px-4 flex flex-wrap items-center justify-around">
-            <div class="slide-content lg:py-0 py-28 flex sm:text-left text-center 2xl:w-1/3 xl:w-2/3 sm:w-1/2 w-ful sm:mt-0 mt-32">
+        <div class="relative z-10 mx-auto row w-full items-center justify-around">
+           <div class="px-8 md:px-12 2xl:w-1/3 xl:w-2/3 sm:w-1/2 w-full">
+                <div class="slide-content lg:py-0 py-28 sm:text-left text-center  sm:mt-0 mt-32">
                 <div class="">
                     <div class="flex flex-wrap sm:justify-start justify-center mb-6">
                         <p class="top-content uppercase text-green-500 font-bold text-lg">Jacob Hill Jr.</p>
@@ -27,7 +29,8 @@
                     </div>
                 </div>
             </div>
-            <div class="md:w-1/3 sm:w-1/2 w-full sm:mt-32 mt-10">
+           </div>
+            <div class="md:w-1/3 sm:w-1/2 w-full sm:mt-32 mt-10 px-4 md:px-6">
                 <img src="../../assets/images/men.png" alt="" class="sm:mx-0 mx-auto">
             </div>
         </div>
@@ -42,7 +45,7 @@
     <!--=================================================
          Start Language  section
     ================================================= -->
-    <section id="platform" class="md:px-24 px-0 py-24">
+    <!-- <section id="platform" class="md:px-24 px-0 py-24">
         <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
             <div class="">
                 <div class="title text-center">
@@ -78,7 +81,7 @@
                 </div>                        
             </div>
         </div>
-    </section>
+    </section> -->
     <!--=================================================
          End Language  section
     ================================================= -->
@@ -87,7 +90,7 @@
     <!--=================================================
          Start About us section
     ================================================= -->
-    <section id="about" class="section-1 bg-green-100 py-24">
+    <!-- <section id="about" class="section-1 bg-green-100 py-24">
         <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
             <div class="w-full flex flex-wrap">
                 <div class="lg:w-1/2 w-full align-self-top sm:order-1 order-2 sm:text-left text-center">
@@ -120,7 +123,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--=================================================
          End About us section
     ================================================= -->
@@ -128,7 +131,7 @@
       <!--=================================================
          Start Our Team section
     ================================================= -->
-    <section id="our_team" class="md:px-24 px-0 py-24">
+    <!-- <section id="our_team" class="md:px-24 px-0 py-24">
         <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
             <div class="">
                 <div class="title text-center">
@@ -190,7 +193,7 @@
                 </div>                        
             </div>
         </div>
-    </section>
+    </section> -->
     <!--=================================================
          End Our Team section
     ================================================= -->
@@ -200,7 +203,7 @@
     <!--=================================================
          Start Promotional section
     ================================================= -->
-    <section id="our_team" class="md:px-24 px-0 pb-24">
+    <!-- <section id="our_team" class="md:px-24 px-0 pb-24">
         <div class="container max-w-screen-xl mx-auto md:px-6 bg-green-200 py-14 my-4 rounded">
             <div class="text-center">
                 <h2 class="py-6 font-bold text-4xl">Codemen unlocks your financial potential</h2>
@@ -212,10 +215,11 @@
                 </div>  
             </div>
         </div>
-    </section>
+    </section> -->
     <!--=================================================
          End Promotional section
     ================================================= -->
+   </div>
 </template>
 <script>
 export default {
