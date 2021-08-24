@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 import OurTeam from '../views/OurTeam.vue'
-import homepage from "../components/Pages/homepage.vue"
+import homepage from "../components/Pages/home/homepage.vue"
 import aboutus from "../components/Pages/aboutus.vue"
 import ContactUs from "./../views/ContactUs.vue"
 
