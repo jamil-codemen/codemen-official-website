@@ -6,70 +6,82 @@
                 <div class="text-center mb-12"><span class="prm-color rounded text-white px-4 pb-4 pt-2 font-bold text-4xl ">Founders</span></div>
                 <div class="row justify-center">
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="zahid.jpg" employeeName="Zahidur Rahman" employeeRole="CEO & Founder"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                        <team-card imgSource="Rana.jpg" employeeName="Ibrahim Al Naz Rana" employeeRole="CTO & Founder"></team-card>           
                     </div>
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                        <team-card imgSource="rabbi.jpg" employeeName="Md. Golam Rabbi" employeeRole="CAO & Founder"></team-card> 
                     </div>
                 </div>
                 <div class="text-center mt-24 mb-12"><span class="prm-color rounded text-white px-4 pb-4 pt-2 font-bold text-4xl ">Full Stack</span></div>
                 <div class="row justify-center">
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="hasib.jpg" employeeName="Hasibur Rahman" employeeRole="Web Developer"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="shoaib.jpg" employeeName="Md. Shoaib Hossain" employeeRole="Web Developer"></team-card>
                     </div>
                 </div>
                 <div class="text-center mt-24 mb-12"><span class="prm-color rounded text-white px-4 pb-4 pt-2 font-bold text-4xl ">Front End</span></div>
                 <div class="row justify-center">
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="irina.jpg" employeeName="Irina Tabassum" employeeRole="Web Developer"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="jamil.jpg" employeeName="Kazi Safayet Jamil" employeeRole="Web Developer"></team-card>
                     </div>
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="nazmul.jpg" employeeName="Inzamul Haq" employeeRole="Web Developer"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="prapti.jpg" employeeName="Tasnim Hossain" employeeRole="Web Developer"></team-card>
                     </div>
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="sihab.jpg" employeeName="Md. Sahabuddin Shaikh" employeeRole="Web Developer"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="tasnuva.jpg" employeeName="Tasnuva Rahman" employeeRole="Web Developer"></team-card>
+                    </div>
+                    <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
+                         <team-card imgSource="aneek.jpg" employeeName="Aneek Khan" employeeRole="Web Developer"></team-card>
+                    </div>
+                    <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
+                       <team-card imgSource="sohan.jpg" employeeName="Ikbal Mahmud (Sohan)" employeeRole="Web Developer"></team-card>
                     </div>
                 </div>
                  <div class="text-center mt-24 mb-12"><span class="prm-color rounded text-white px-4 pb-4 pt-2 font-bold text-4xl ">Back End</span></div>
                 <div class="row justify-center">
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="kamrul.jpg" employeeName="Md. Kamruzzaman" employeeRole="Web Developer"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="biplob.jpg" employeeName="Biplab Sarkar" employeeRole="Web Developer"></team-card>
                     </div>
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="robin.jpg" employeeName="Md. Mizanur Rahman" employeeRole="Web Developer"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="dip.jpg" employeeName="Deepayan Mallik" employeeRole="Web Developer"></team-card>
                     </div>
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="forhad.jpg" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="mainul.jpg" employeeName="Md. Forhad Hossen" employeeRole="Web Developer"></team-card>
                     </div>
                     <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4 ">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="istiak.jpg" employeeName="Istiak Ahmed" employeeRole="Web Developer"></team-card>
                     </div>
                      <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
-                       <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                       <team-card imgSource="asad.jpg" employeeName="Asaduzzam Sohel" employeeRole="Web Developer"></team-card>
+                    </div>
+                    <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
+                        <team-card imgSource="suma.jpg" employeeName="Soma Paul" employeeRole="Web Developer"></team-card>
+                    </div>
+                    <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4">
+                       <team-card imgSource="alamin.jpg" employeeName="Al Amin" employeeRole="Web Developer"></team-card>
                     </div>
                 </div>
             </div>
