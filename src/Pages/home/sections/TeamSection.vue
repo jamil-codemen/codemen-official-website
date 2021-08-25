@@ -16,7 +16,7 @@
                         <team-card imgSource="Rana.jpg" employeeName="Ibrahim Al Naz Rana" employeeRole="CTO & Founder"></team-card>           
                     </div>
                     <div class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4">
-                        <team-card imgSource="rabbi.jpg" employeeName="Md. Golam Rabbi" employeeRole="CAO & Founder"></team-card>           
+                      <team-card imgSource="rabbi.jpg" employeeName="Md. Golam Rabbi" employeeRole="CAO & Founder"></team-card>  
                     </div>
                 </div>
                 <div class="mt-16 flex justify-center">
