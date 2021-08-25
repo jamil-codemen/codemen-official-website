@@ -8,18 +8,15 @@
                         <p class="text-gray-700">We work intensively in search of ideals that can add up in the lives of our customers. <br>This is what moves us and we are grateful for the recognition.</p>
                     </div>
                 </div> 
-                <div class="row">   
+                <div class="row justify-center">   
                     <div class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4">
-                        <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>
+                        <team-card imgSource="zahid.jpg" employeeName="Zahidur Rahman" employeeRole="CEO & Founder"></team-card>
                     </div>
                     <div class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4">
-                        <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>           
+                        <team-card imgSource="Rana.jpg" employeeName="Ibrahim Al Naz Rana" employeeRole="CTO & Founder"></team-card>           
                     </div>
                     <div class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4">
-                        <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>           
-                    </div>
-                    <div class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4">
-                        <team-card imgSource="full_imagemen.png" employeeName="Forhad Hosen" employeeRole="Web Developer"></team-card>           
+                        <team-card imgSource="rabbi.jpg" employeeName="Md. Golam Rabbi" employeeRole="CAO & Founder"></team-card>           
                     </div>
                 </div>
                 <div class="mt-16 flex justify-center">
