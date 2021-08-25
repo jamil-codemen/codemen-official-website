@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import OurTeam from '../components/Pages/team/OurTeam.vue'
-import homepage from "../components/Pages/home/homepage.vue"
-import About from "../components/Pages/about/About.vue"
-import ContactUs from "../components/Pages/contact/ContactUs.vue"
+import OurTeam from '../Pages/team/OurTeam.vue'
+import homepage from "../Pages/home/homepage.vue"
+import About from "../Pages/about/About.vue"
+import ContactUs from "../Pages/contact/ContactUs.vue"
+
 
 const routes: Array<RouteRecordRaw> = [
   {
