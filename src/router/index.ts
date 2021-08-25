@@ -4,7 +4,6 @@ import homepage from "../Pages/home/homepage.vue"
 import About from "../Pages/about/About.vue"
 import ContactUs from "../Pages/contact/ContactUs.vue"
 
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
