@@ -1,42 +1,78 @@
 <template>
-        <section class="md:px-24 px-0 py-24">
-        <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
-            <div class="">
-                <div class="title text-center">
-                    <div class="w-full space-y-6">
-                        <h2 class="font-bold text-4xl text-gray-800">Our <span class="prm-color rounded px-4 pb-3 pt-2 text-white">Team</span></h2>
-                        <p class="text-gray-700">We work intensively in search of ideals that can add up in the lives of our customers. <br>This is what moves us and we are grateful for the recognition.</p>
-                    </div>
-                </div> 
-                <div class="row justify-center">   
-                    <div class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4">
-                        <team-card imgSource="zahid.jpg" employeeName="Zahidur Rahman" employeeRole="CEO & Founder"></team-card>
-                    </div>
-                    <div class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4">
-                        <team-card imgSource="Rana.jpg" employeeName="Ibrahim Al Naz Rana" employeeRole="CTO & Founder"></team-card>           
-                    </div>
-                    <div class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4">
-                      <team-card imgSource="rabbi.jpg" employeeName="Md. Golam Rabbi" employeeRole="CAO & Founder"></team-card>  
-                    </div>
-                </div>
-                <div class="mt-16 flex justify-center">
-                        <custom-button buttonClass="bg-green-500 hover:bg-gray-900 font-bold text-white" isLink=true content="See More"></custom-button>
-                </div>  
-            </div>
+  <section class="md:px-24 px-0 py-24">
+    <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
+      <div class="">
+        <div class="title text-center">
+          <div class="w-full space-y-6">
+            <h2 class="font-bold text-4xl text-gray-800">
+              Our
+              <span class="prm-color rounded px-4 pb-3 pt-2 text-white"
+                >Team</span
+              >
+            </h2>
+            <p class="text-gray-700">
+              We work intensively in search of ideals that can add up in the
+              lives of our customers. <br />This is what moves us and we are
+              grateful for the recognition.
+            </p>
+          </div>
         </div>
-    </section>
+        <div class="row justify-center">
+          <div
+            class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4"
+            v-for="founder in founderTeam"
+            :key="founder.employeeName"
+          >
+            <team-card
+              :imgSource="founder.img"
+              :employeeName="founder.employeeName"
+              :employeeRole="founder.employeeRole"
+            ></team-card>
+          </div>
+        </div>
+        <div class="mt-16 flex justify-center">
+          <custom-button
+            buttonClass="bg-green-500 hover:bg-gray-900 font-bold text-white"
+            isLink="true"
+            content="See More"
+          ></custom-button>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
-<script lang="ts">
-import CustomButton from '@/components/button/CustomButton.vue'
-import TeamCard from '@/components/teamCard/TeamCard.vue'
+<script>
+import CustomButton from "@/components/button/CustomButton.vue";
+import TeamCard from "@/components/teamCard/TeamCard.vue";
 
 export default {
   components: { CustomButton, TeamCard },
-    name:"TeamSection"
-}
+  name: "TeamSection",
+  data() {
+    return {
+      founderTeam: [
+        {
+          img: "zahid.jpg",
+          employeeName: "Zahidur Rahman",
+          employeeRole: "CEO & Founder",
+        },
+        {
+          img: "Rana.jpg",
+          employeeName: "Ibrahim Al Naz Rana",
+          employeeRole: "CTO & Founder",
+        },
+        {
+          img: "rabbi.jpg",
+          employeeName: "Md. Golam Rabbi",
+          employeeRole: "CAO & Founder",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style scoped>
-.prm-color{
-    background-color:#113335;
+.prm-color {
+  background-color: #113335;
 }
 </style>

@@ -1,5 +1,13 @@
 <template>
   <div >
-    <h1>This is an about page</h1>
+    adsfsgs
   </div>
 </template>
+<script lang="ts">
+import { computed } from '@vue/reactivity'
+
+export default {
+  name:"Aboutme",
+  
+}
+</script>
