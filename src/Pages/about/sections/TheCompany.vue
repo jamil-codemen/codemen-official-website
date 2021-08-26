@@ -2,7 +2,7 @@
   <div class=" bg-gray-900 px-4">
     <div class="row">
       <div class="w-full md:w-1/2 px-4  my-20">
-         <div class="mx-20">
+         <div class="md:mx-20">
                             <div class="w-full p-0 ">
                                 <div class="flex flex-wrap sm:justify-start justify-center ">
                                     <p class="top-content uppercase text-green-500 font-bold text-lg py-6">About the Network</p>
@@ -12,14 +12,14 @@
                                             class="text-white ">The</span></span> Company</h2>
                             </div>
                         </div>
-                        <div class="pt-8 mx-20">
+                        <div class="pt-8 md:ml-20">
                             <div class="text-white py-6">
                                 <p>For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and related services to select clients.</p>
                                 <p class="pt-4">Curabitur convallis, diam a egestas iaculis, neque lorem interdum felis,
                                     in viverra lacus tortor in leo.</p>
                             </div>
                         </div>
-                        <div class="flex-wrap flex mx-20 ">
+                        <div class="flex-wrap flex md:ml-20 ">
                             <div class="md:w-1/2 w-full py-8">
                                 <h4 class="text-2xl text-white font-semibold flex items-center justify-center sm:justify-start">
                                     <div>
@@ -75,7 +75,7 @@ export default {
   name: "TheCompany",
 };
 </script>
-<style scoped>
+<style >
 .prm-color{
     background-color:#113335;
 }
