@@ -20,7 +20,7 @@
         <div class="row justify-center">
           <div
             class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4"
-            v-for="founder in founderTeam"
+            v-for="founder in founders"
             :key="founder.employeeName"
           >
             <team-card
@@ -50,25 +50,17 @@ export default {
   name: "TeamSection",
   data() {
     return {
-      founderTeam: [
-        {
-          img: "zahid.jpg",
-          employeeName: "Zahidur Rahman",
-          employeeRole: "CEO & Founder",
-        },
-        {
-          img: "Rana.jpg",
-          employeeName: "Ibrahim Al Naz Rana",
-          employeeRole: "CTO & Founder",
-        },
-        {
-          img: "rabbi.jpg",
-          employeeName: "Md. Golam Rabbi",
-          employeeRole: "CAO & Founder",
-        },
-      ],
     };
   },
+  computed:{
+    founders(){
+      let Team =this.$store.state.Team
+      let allFounders=Team.filter(founder=>{
+           return founder.category==='founder'
+        })
+        return allFounders;
+    }
+  }
 };
 </script>
 <style scoped>

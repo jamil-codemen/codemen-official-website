@@ -3,42 +3,47 @@ import OurTeam from '../Pages/team/OurTeam.vue'
 import homepage from "../Pages/home/homepage.vue"
 import About from "../Pages/about/About.vue"
 import ContactUs from "../Pages/contact/ContactUs.vue"
-import Aboutme from"../views/About.vue"
+import MainPage from "../Pages/mainPage/MainPage.vue"
+import ErrorPage from "../Pages/errorPage/ErrorPage.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: homepage
+    name: 'MainPage',
+    component: MainPage,
+    children:[
+      {
+        path: '',
+        name: 'Home',
+        component: homepage
+      },
+      {
+        path: '/ourteam',
+        name: 'OurTeam',
+        component: OurTeam
+      },
+      {
+        path: '/contact-us',
+        name: 'contactUs',
+        component: ContactUs
+      },
+      {
+        path: '/about',
+        name: 'About',
+        component: About
+      },
+    ]
   },
   {
-    path: '/ourteam',
-    name: 'OurTeam',
-    component: OurTeam
+    path:'/error',
+    name:'ErrorPage',
+    component : ErrorPage
   },
   {
-    path: '/contact-us',
-    name: 'contactUs',
-    component: ContactUs
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
-  },
-  {
-    path: '/aboutme',
-    name: 'Aboutme',
-    component: Aboutme
-  },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../components/Pages/aboutus.vue')
-  // }
+    path:'/:pathMatch(.*)*',
+    redirect:'/error'
+  }
+  
 ]
 
 const router = createRouter({
@@ -47,4 +52,14 @@ const router = createRouter({
 })
 
 export default router
+
+
+// {
+//   path: '/about',
+//   name: 'About',
+//   // route level code-splitting
+//   // this generates a separate chunk (about.[hash].js) for this route
+//   // which is lazy-loaded when the route is visited.
+//   component: () => import(/* webpackChunkName: "about" */ '../components/Pages/aboutus.vue')
+// }
 

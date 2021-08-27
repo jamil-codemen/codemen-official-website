@@ -7,16 +7,10 @@
                         <p class="text-gray-700">We work intensively in search of ideals that can add up in the lives of our customers. <br>This is what moves us and we are grateful for the recognition.</p>
                     </div>
                 </div> 
-                <div class="row">   
-                    <div class="mt-16 px-4 w-full lg:w-1/3 md:w-1/2 mx-auto">
-                        <skill-card imgSource="go.png" languageName="Go Lang"></skill-card>
-                    </div>
-                    <div class="mt-16 px-4 w-full lg:w-1/3 md:w-1/2 mx-auto">
-                        <skill-card imgSource="vuejs.png" languageName="Vue JS"></skill-card>
-                    </div>
-                    <div class="mt-16 px-4 w-full lg:w-1/3 md:w-1/2 mx-auto">
-                        <skill-card imgSource="laravel.png" languageName="Laravel"></skill-card>
-                    </div>
+                <div class="row"> 
+                    <div class="mt-16 px-4 w-full lg:w-1/3 md:w-1/2 mx-auto" v-for="skill in skills" :key="skill.skillName">
+                        <skill-card :imgSource="skill.img" :languageName="skill.skillName"></skill-card>
+                    </div>  
                 </div>  
                 <div class="pt-16 flex justify-center">
                      <custom-button buttonClass="bg-green-500 hover:bg-gray-900 font-bold text-white" isLink=true content="See More"></custom-button>
@@ -24,13 +18,21 @@
         </div>
     </section>
 </template>
-<script lang="ts">
+<script>
 import CustomButton from '@/components/button/CustomButton.vue'
 import SkillCard from '../components/SkillCard.vue'
 
 export default {
   components: { SkillCard, CustomButton },
-    name:"ExpertSection"
+    name:"ExpertSection",
+    data(){
+        return{}
+    },
+    computed:{
+        skills(){
+            return this.$store.state.skills;
+        }
+    },
 }
 </script>
 <style scoped>
