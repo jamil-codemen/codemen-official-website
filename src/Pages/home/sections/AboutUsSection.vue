@@ -5,7 +5,7 @@
                 <div class="lg:w-1/2 w-full align-self-top sm:order-1 order-2 sm:text-left text-center px-4 mx-auto">
                         <div class="w-full">
                                 <p class="uppercase text-green-500 font-bold text-lg py-4">codemen.org</p>
-                            <h2 class="uppercase md:leading-tight title text-4xl font-black  mt-1.5"><span class="prm-color rounded pb-3 pt-2"><span class="text-white" >Who</span></span> We Are</h2>
+                            <h2 class="uppercase md:leading-tight title text-4xl font-black  mt-1.5"><span class="prm-color rounded pb-3 pt-2 px-4"><span class="text-white" >Who</span></span> We Are</h2>
                         </div>
                     <div class="pt-8">
                         <div class="text-gray-700">
