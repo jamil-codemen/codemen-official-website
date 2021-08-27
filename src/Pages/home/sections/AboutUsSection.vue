@@ -5,7 +5,8 @@
                 <div class="lg:w-1/2 w-full align-self-top sm:order-1 order-2 sm:text-left text-center px-4 mx-auto">
                         <div class="w-full">
                                 <p class="uppercase text-green-500 font-bold text-lg py-4">codemen.org</p>
-                            <h2 class="uppercase md:leading-tight title text-4xl font-black  mt-1.5"><span class="prm-color rounded pb-3 pt-2 px-4"><span class="text-white" >Who</span></span> We Are</h2>
+                            <!-- <h2 class="uppercase md:leading-tight title text-4xl font-black  mt-1.5"><span class="prm-color rounded pb-3 pt-2 px-4"><span class="text-white" >Who</span></span> We Are</h2> -->
+                              <custom-header headerClass="font-bold text-4xl text-gray-800" firstSpan="who" SecondSpan=" We Are" blockFirst></custom-header>
                         </div>
                     <div class="pt-8">
                         <div class="text-gray-700">
@@ -30,10 +31,11 @@
 </template>
 <script lang="ts">
 import CustomButton from '@/components/button/CustomButton.vue'
+import CustomHeader from '@/components/customHeader/CustomHeader.vue'
 
 
 export default {
-  components: { CustomButton },
+  components: { CustomButton, CustomHeader },
     name:"AboutUsSection"
 }
 </script>

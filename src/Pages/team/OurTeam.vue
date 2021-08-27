@@ -8,19 +8,7 @@
     <div class="container max-w-screen-xl mx-auto md:px-6 px-4 py-12">
       <div class="">
         <div class="text-center mb-12">
-          <span
-            class="
-              prm-color
-              rounded
-              text-white
-              px-4
-              pb-4
-              pt-2
-              font-bold
-              text-4xl
-            "
-            >Founders</span
-          >
+          <custom-header firstSpan="Founders" block></custom-header>
         </div>
         <div class="row justify-center">
           <div
@@ -37,19 +25,7 @@
         </div>
         <!------------------------- admin section --------------------------->
          <div class="text-center mt-24 mb-12">
-          <span
-            class="
-              prm-color
-              rounded
-              text-white
-              px-4
-              pb-4
-              pt-2
-              font-bold
-              text-4xl
-            "
-            >Admins</span
-          >
+          <custom-header firstSpan="Admins" block></custom-header>
         </div>
         <div class="row justify-center">
             <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4" v-for="employee in admins" :key="employee.name">
@@ -62,19 +38,7 @@
         </div>
         <!-----------------------------full stack section--------------------------------->
         <div class="text-center mt-24 mb-12">
-          <span
-            class="
-              prm-color
-              rounded
-              text-white
-              px-4
-              pb-4
-              pt-2
-              font-bold
-              text-4xl
-            "
-            >Full Stack</span
-          >
+         <custom-header firstSpan="Full Stack" block></custom-header>
         </div>
         <div class="row justify-center">
             <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4" v-for="employee in fullStack" :key="employee.name">
@@ -87,19 +51,7 @@
         </div>
         <!----------------------Front end section ------------------------------->
         <div class="text-center mt-24 mb-12">
-          <span
-            class="
-              prm-color
-              rounded
-              text-white
-              px-4
-              pb-4
-              pt-2
-              font-bold
-              text-4xl
-            "
-            >Front End</span
-          >
+          <custom-header firstSpan="Front End" block></custom-header>
         </div>
         <div class="row justify-center">
           <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4" v-for="employee in frontEnd" :key="employee.employeeName">
@@ -112,19 +64,7 @@
         </div>
         <!-----------------------------Back end section --------------------------------->
         <div class="text-center mt-24 mb-12">
-          <span
-            class="
-              prm-color
-              rounded
-              text-white
-              px-4
-              pb-4
-              pt-2
-              font-bold
-              text-4xl
-            "
-            >Back End</span
-          >
+        <custom-header firstSpan="Back Stack" block></custom-header>
         </div>
         <div class="row justify-center">
            <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4" v-for="employee in backEnd" :key="employee.employeeName">
@@ -137,19 +77,7 @@
         </div>
         <!---------------------------------------------Intern section------------------------------------------->
          <div class="text-center mt-24 mb-12">
-          <span
-            class="
-              prm-color
-              rounded
-              text-white
-              px-4
-              pb-4
-              pt-2
-              font-bold
-              text-4xl
-            "
-            >Interns</span
-          >
+          <custom-header firstSpan="Interns" block></custom-header>
         </div>
         <div class="row justify-center">
           <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4" v-for="employee in intern" :key="employee.employeeName">
@@ -161,30 +89,7 @@
           </div>
         </div>
         <!-----------------------------------------office Staffs------------------------------------------------------->
-         <div class="text-center mt-24 mb-12">
-          <span
-            class="
-              prm-color
-              rounded
-              text-white
-              px-4
-              pb-4
-              pt-2
-              font-bold
-              text-4xl
-            "
-            >Office Staffs</span
-          >
-        </div>
-        <div class="row justify-center">
-          <div class="md:w-1/4 sm:w-1/2 w-full md:pt-0 pt-10 px-4" v-for="employee in staff" :key="employee.employeeName">
-            <team-card
-              :imgSource="employee.img"
-              :employeeName="employee.employeeName"
-              :employeeRole="employee.employeeRole"
-            ></team-card>
-          </div>
-        </div>
+        
         <!-------------------------------------------------------------------------->
       </div>
     </div>
@@ -197,9 +102,10 @@
 import Headline from "@/components/headline/Headline.vue";
 import TeamCard from "@/components/teamCard/TeamCard.vue";
 import PromotionCard from "@/components/promotionCard/PromotionCard.vue";
+import CustomHeader from '@/components/customHeader/CustomHeader.vue';
 
 export default {
-  components: { Headline, TeamCard, PromotionCard },
+  components: { Headline, TeamCard, PromotionCard, CustomHeader },
   name: "OurTeam",
   data() {
     return {
