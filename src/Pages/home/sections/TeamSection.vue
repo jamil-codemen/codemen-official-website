@@ -4,12 +4,7 @@
       <div class="">
         <div class="title text-center">
           <div class="w-full space-y-6">
-            <h2 class="font-bold text-4xl text-gray-800">
-              Our
-              <span class="prm-color rounded px-4 pb-3 pt-2 text-white"
-                >Team</span
-              >
-            </h2>
+              <custom-header headerClass="font-bold text-4xl text-gray-800" firstSpan="Our " SecondSpan="Team" blockSecond></custom-header>
             <p class="text-gray-700">
               We work intensively in search of ideals that can add up in the
               lives of our customers. <br />This is what moves us and we are
@@ -44,9 +39,10 @@
 <script>
 import CustomButton from "@/components/button/CustomButton.vue";
 import TeamCard from "@/components/teamCard/TeamCard.vue";
+import CustomHeader from '@/components/customHeader/CustomHeader.vue';
 
 export default {
-  components: { CustomButton, TeamCard },
+  components: { CustomButton, TeamCard, CustomHeader },
   name: "TeamSection",
   data() {
     return {

@@ -3,7 +3,8 @@
         <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
                 <div class="text-center">
                     <div class="w-full space-y-6">
-                        <h2 class="font-bold text-4xl text-gray-800">We Are <span class="prm-color rounded text-white px-4 pb-4 pt-2">Expert</span></h2>
+                        <!-- <h2 class="font-bold text-4xl text-gray-800">We Are <span class="prm-color rounded text-white px-4 pb-4 pt-2">Expert</span></h2> -->
+                        <custom-header headerClass="font-bold text-4xl text-gray-800" firstSpan="We Are " SecondSpan="Expert" blockSecond></custom-header>
                         <p class="text-gray-700">We work intensively in search of ideals that can add up in the lives of our customers. <br>This is what moves us and we are grateful for the recognition.</p>
                     </div>
                 </div> 
@@ -21,9 +22,10 @@
 <script>
 import CustomButton from '@/components/button/CustomButton.vue'
 import SkillCard from '../components/SkillCard.vue'
+import CustomHeader from '@/components/customHeader/CustomHeader.vue'
 
 export default {
-  components: { SkillCard, CustomButton },
+  components: { SkillCard, CustomButton, CustomHeader },
     name:"ExpertSection",
     data(){
         return{}

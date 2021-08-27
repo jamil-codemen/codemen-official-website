@@ -181,8 +181,8 @@ const store =createStore({
         {
           img: "riaz.jpg",
           employeeName: "Md.Riaz",
-          employeeRole: "Office Staff",
-          category: "staff",
+          employeeRole: "Office Assistant",
+          category: "admin",
         },
         
       ],
