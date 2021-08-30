@@ -1,14 +1,15 @@
 <template>
-    <div class="container mx-auto px-4">
-        <div class="row">
-            <div class="w-full md:w-9/12 px-4">
-             <div class="">
-                        <div class="w-full p-0">
-                            <div class="flex flex-wrap sm:justify-start justify-center">
-                                <p class="top-content uppercase text-green-500 font-bold text-lg py-4">A success story
+    <section class="py-24">
+        <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
+            <div class="row">
+                <div class="lg:w-3/4 w-full align-self-top sm:text-left text-center pl-4 md:pr-8 pr-4">
+                    <div class="">
+                        <div class="w-full">
+                            <div class="sm:text-left text-center">
+                                <p class="uppercase text-green-500 font-bold text-lg py-4">A success story
                                 </p>
                             </div>
-                            <h2 class="uppercase md:leading-tight title text-4xl font-black  mt-1.5"><span
+                            <h2 class="uppercase md:leading-tight text-4xl font-black  mt-1.5"><span
                                     class="prm-color rounded px-4 pb-3 pt-2"><span class="text-white">Who</span></span>
                                 We Are</h2>
                         </div>
@@ -37,14 +38,13 @@
                                 Nunc diam orci, tincidunt eget consectetur sit amet, vulputate.</p>
                         </div>
                     </div>
-                    </div>
-            <div class="w-full md:w-3/12 px-4">
-            <div class="md:mt-14 mt-8 ">
+                </div>
+                <div class="lg:w-1/4 w-full align-self-top sm:text-left text-center items-center pr-4 md:pl-8 pl-4">
+                    <div class="md:mt-14 mt-8 ">
                         <h4 class="text-3xl font-semibold mb-8">Occupation Area</h4>
                         <ul class="">
                             <li class="border-b border-gray-300 py-4 flex items-center sm:justify-start justify-center">
-                                <a href="#"><i class="fas fa-sitemap text-3xl text-green-500"></i></a>
-                                <div>
+                               <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd" />
                                     </svg>
@@ -52,7 +52,6 @@
                                 <p class="ml-4  text-gray-500"> Lorem ipsum dolor sit amet consectetur. </p>
                             </li>
                             <li class="border-b border-gray-300 py-4 flex items-center sm:justify-start justify-center">
-                                <!-- <a href="#"><i class="fas fa-globe-asia text-3xl text-green-500"></i></a> -->
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd" />
@@ -69,7 +68,7 @@
                                 <p class="ml-4  text-gray-500"> Lorem ipsum dolor sit amet consectetur. </p>
                             </li>
                             <li class="border-b border-gray-300 py-4 flex items-center sm:justify-start justify-center">
-                                <div>
+                               <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
                                         <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
@@ -87,8 +86,7 @@
                                 <p class="ml-4  text-gray-500"> Lorem ipsum dolor sit amet consectetur. </p>
                             </li>
                             <li class="border-b border-gray-300 py-4 flex items-center sm:justify-start justify-center">
-                                <a href="#"><i class="fas fa-chart-line text-3xl text-green-500"></i></a>
-                                <div>
+                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                                         <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414                                    0l4-4z" clip-rule="evenodd" />
                                         </svg>
@@ -96,8 +94,7 @@
                                 <p class="ml-4  text-gray-500"> Lorem ipsum dolor sit amet consectetur. </p>
                             </li>
                             <li class="py-4 flex items-center sm:justify-start justify-center">
-                                <a href="#"><i class="fas fa-plane text-3xl text-green-500"></i></a>
-                                <div>
+                               <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                                     <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
                                     </svg>
@@ -106,9 +103,10 @@
                             </li>
                         </ul>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 <script>
 export default {

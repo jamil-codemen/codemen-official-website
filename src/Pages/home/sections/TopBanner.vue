@@ -51,12 +51,12 @@
               <div class="pt-10 flex flex-wrap lg:justify-start justify-center">
                 <custom-button
                   buttonClass="bg-green-500 font-bold text-white"
-                  isLink="true"
+                  isLink
                   content="GET IN TOUCH"
                 ></custom-button>
                 <custom-button
                   buttonClass=" underline font-bold text-white"
-                  isLink="true"
+                  isLink
                   content="HOW IT WORKS"
                 ></custom-button>
               </div>

@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="mt-12 w-full">
-                                <custom-button buttonClass="group border-green-500 hover:bg-green-500 border font-bold text-white block" isLink =true content="GET IN TOUCH"></custom-button>
+                                <custom-button buttonClass="group border-green-500 hover:bg-green-500 border font-bold text-white block" isLink content="GET IN TOUCH"></custom-button>
                             </div>
                         </div>
                        <div class="w-full md:w-1/2 lg:w-1/4 px-4">
