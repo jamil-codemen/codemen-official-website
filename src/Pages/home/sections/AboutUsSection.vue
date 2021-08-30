@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="pt-8 flex">
-                        <custom-button buttonClass="bg-green-500 hover:bg-gray-900 font-bold text-white" isLink=true content="Read More"></custom-button>
+                        <custom-button buttonClass="bg-green-500 hover:bg-gray-900 font-bold text-white" isLink content="Read More"></custom-button>
                     </div>  
                 </div>
                 <div class="lg:w-1/2 w-full sm:order-2 order-1 sm:text-left text-center px-4 mx-auto">

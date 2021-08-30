@@ -14,7 +14,7 @@
                     </div>  
                 </div>  
                 <div class="pt-16 flex justify-center">
-                     <custom-button buttonClass="bg-green-500 hover:bg-gray-900 font-bold text-white" isLink=true content="See More"></custom-button>
+                     <custom-button buttonClass="bg-green-500 hover:bg-gray-900 font-bold text-white" isLink content="See More"></custom-button>
             </div>
         </div>
     </section>
