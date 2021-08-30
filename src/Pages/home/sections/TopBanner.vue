@@ -9,6 +9,7 @@
     <section class="md:px-24 px-0 min-h-screen lg:pt-4">
       <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
         <div class="row relative z-10 items-center justify-around">
+          <!-------------------------written section ------------------------------------->
           <div
             class="
               w-full
@@ -30,19 +31,6 @@
                   Jacob Hill Jr.
                 </p>
               </div>
-              <!-- <h1
-                class="
-                  uppercase
-                  md:leading-tight
-                  md:text-7xl
-                  text-4xl
-                  font-black
-                  text-white
-                  mt-1.5
-                "
-              >
-                LIFE <span class="prm-color rounded px-2 pb-3">COACH</span>
-              </h1> -->
               <custom-header headerClass="text-4xl md:text-7xl text-white mt-1.5 font-black" firstSpan="LIFE " SecondSpan="COACH" blockSecond></custom-header>
               <p class="md:text-2xl text-md font-medium mt-8 text-white">
                 Delivering deep insight, game-changing ideas revolutionary
@@ -62,6 +50,7 @@
               </div>
             </div>
           </div>
+          <!-------------------------image section ------------------------------------->
           <div class="xl:w-7/12 lg:w-1/2 px-4 mx-auto w-full sm:mt-32 mt-10">
             <img
               src="../../../assets/images/banner.png"

@@ -4,6 +4,7 @@
                 <img class="w-full h-full absolute top-0 left-0 z-10" src="../../assets/images/bg-7.jpg" alt="">
                 <div class="container max-w-screen-xl mx-auto py-40 relative z-20 px-4">
                     <div class="row">
+                        <!--------------------------------Company information section ----------------------------------------------->
                         <div class="w-full md:w-1/2 lg:w-1/4 px-4">
                             <div class="mb-8">
                                 <a href="#" class="">
@@ -53,123 +54,54 @@
                                 <custom-button buttonClass="group border-green-500 hover:bg-green-500 border font-bold text-white block" isLink content="GET IN TOUCH"></custom-button>
                             </div>
                         </div>
+                         <!--------------------------------About section ----------------------------------------------->
                        <div class="w-full md:w-1/2 lg:w-1/4 px-4">
                             <div class="bg-white bg-opacity-5 text-gray-400 p-10">
                             <h4 class="text-3xl text-white mb-8 font-semibold">About</h4>
                             <ul class="space-y-4">
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>The Company</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Institutional</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Social & Events</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Innovation</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Environment</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Technology</span></a>
-                                </li>
+                                <footer-link content="The Company"></footer-link>
+                                <footer-link content="Institutional"></footer-link>
+                                <footer-link content="Social & Events"></footer-link>
+                                <footer-link content="Innovation"></footer-link>
+                                <footer-link content="Environment"></footer-link>
+                                <footer-link content="Technology"></footer-link>
                             </ul>  
                         </div>
                        </div>
+                       <!--------------------------------Services section ----------------------------------------------->
                         <div class="w-full md:w-1/2 lg:w-1/4 px-4">
                             <div class="bg-white bg-opacity-5 text-gray-400 p-10">
                             <h4 class="text-3xl text-white mb-8 font-semibold">Services</h4>
                             <ul class="space-y-4">
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Audit & Assurance</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Financial Advisory</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Analytics M&A</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Middle Marketing</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Legal Consulting</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Regulatory Risk</span></a>
-                                </li>
+                                <footer-link content="Audit & Assurance"></footer-link>
+                                <footer-link content="Financial Advisory"></footer-link>
+                                <footer-link content="Analytics M&A"></footer-link>
+                                <footer-link content="Middle Marketing"></footer-link>
+                                <footer-link content="Legal Consulting"></footer-link>
+                                <footer-link content="Regulatory Risk"></footer-link>
                             </ul>  
                         </div>
                         </div>
+                        <!--------------------------------support section ----------------------------------------------->
                        <div class="w-full md:w-1/2 lg:w-1/4 px-4">
                             <div class="bg-white bg-opacity-5 text-gray-400 p-10">
                             <h4 class="text-3xl text-white mb-8 font-semibold">Support</h4>
                             <ul class="space-y-4">
-                                    <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Responsibility</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Institutional</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>About Cookies</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Privacy Policy</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Environment</span></a>
-                                </li>
-                                <li class="hover:text-green-500">
-                                    <a href="#" class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                                    </svg><span>Technology</span></a>
-                                </li>
+                                <footer-link content="Responsibility"></footer-link>
+                                <footer-link content="Institutional"></footer-link>
+                                <footer-link content="About Cookies"></footer-link>
+                                <footer-link content="Privacy Policy"></footer-link>
+                                <footer-link content="Environment"></footer-link>
+                                <footer-link content="Technology"></footer-link>
                             </ul>  
                         </div>
-                       </div>
-                        
+                       </div> 
                     </div>
                 </div>
             </div>
         </div>
-            <div class="bg-black">
+        <!-------------------copyright section------------------------------->
+        <div class="bg-black">
         <div class="container max-w-screen-xl mx-auto px-4">
             <div class="row items-center justify-between py-6 text-center">
                 <div class="w-full lg:w-auto px-4">
@@ -187,9 +119,11 @@
 </style>
 <script>
 import CustomButton from '../button/CustomButton.vue'
+import FooterLink from "./components/FooterLink.vue"
+
 
 export default {
-  components: { CustomButton },
+  components: { CustomButton, FooterLink },
     name:"Footer"
 }
 </script>

@@ -3,27 +3,14 @@
   <section class="md:px-24 px-0 pt-24 pb-12">
     <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
       <div class="row">
+        <!-------------------------------Send a message section---------------------------------------------------->
         <div class="lg:w-2/3 md:1/2 w-full pl-4 pr-10">
           <div class="sm:text-left text-center mb-6">
             <p class="uppercase text-green-500 font-bold text-lg">
               Send a message
             </p>
           </div>
-          <h1
-            class="
-              md:leading-tight
-              md:text-5xl
-              text-4xl
-              font-black
-              text-gray-700
-              mt-1.5
-              sm:text-left
-              text-center
-            "
-          >
-            Get in
-            <span class="prm-color rounded text-white px-2 pb-3">Touch</span>
-          </h1>
+          <custom-header headerClass="font-black text-4xl text-gray-800" firstSpan="Get in " SecondSpan="Touch" blockSecond></custom-header>
           <p class="mt-10 text-gray-700 text-xl sm:text-left text-center">
             We will respond to your message as soon as possible.
           </p>
@@ -31,7 +18,6 @@
             <form action="php/form.php">
               <div class="row">
                 <div class="sm:w-1/2 w-full px-4 py-3">
-                  <!-- <input type="text" name="name" class="rounded bg-green-50 px-4 py-4 w-full border border-green-50 focus:border-green-200 focus:outline-none" placeholder="Name"> -->
                   <custom-input-field
                     inputClass="bg-green-50  border border-green-50 focus:border-green-200 "
                     inputName="name"
@@ -81,6 +67,7 @@
             </form>
           </div>
         </div>
+        <!-------------------------------  example section   ---------------------------------------------------->
         <div class="lg:w-1/3 w-full px-4">
           <div class="lg:mt-28 mt-6">
             <div>

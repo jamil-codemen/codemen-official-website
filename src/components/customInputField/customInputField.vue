@@ -1,4 +1,5 @@
 <template>
+<!------------------------------------------    text-area component ------------------------------------------------->
   <textarea
     v-if="isTextArea"
     :name="inputName"
@@ -7,7 +8,7 @@
     :class="inputClass"
     :placeholder="inputPlaceholder"
   ></textarea>
-
+<!------------------------------------------    input component ------------------------------------------------->
   <input v-else :class="inputClass" :name="inputName" :placeholder="inputPlaceholder"  :type="inputType" class="px-4 py-4 w-full focus:outline-none" />
 </template>
 <script>

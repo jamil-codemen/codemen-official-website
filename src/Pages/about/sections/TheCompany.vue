@@ -3,6 +3,7 @@
     <div class="bg-gray-900 md:relative py-24">
       <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
         <div class="w-full flex flex-wrap">
+          <!---------------------------------------   network section ------------------------------------------------------->
           <div
             class="
               w-full
@@ -16,7 +17,7 @@
           >
             <div class="">
               <div class="w-full p-0">
-                <div class="flex flex-wrap sm:justify-start justify-center">
+                <div class="sm:text-left text-center">
                   <p
                     class="
                       top-content
@@ -30,22 +31,8 @@
                     About the Network
                   </p>
                 </div>
-                <h2
-                  class="
-                    uppercase
-                    md:leading-tight
-                    title
-                    text-4xl
-                    font-black
-                    text-white
-                    mt-1.5
-                  "
-                >
-                  <span class="prm-color rounded px-4 pb-3 pt-2"
-                    ><span class="text-white">The</span></span
-                  >
-                  Company
-                </h2>
+                
+                <custom-header headerClass="font-black text-4xl text-white" firstSpan="The" SecondSpan=" Company" blockFirst></custom-header>
               </div>
             </div>
             <div class="pt-8">
@@ -154,6 +141,7 @@
               </div>
             </div>
           </div>
+          <!---------------------------------   picture section ----------------------------------------------------->
           <div
             class="md:w-1/2 w-full md:h-full md:absolute md:top-0 md:right-0"
           >
@@ -169,8 +157,10 @@
   </section>
 </template>
 <script>
+import CustomHeader from '@/components/customHeader/CustomHeader.vue';
 
 export default {
+  components: { CustomHeader },
   name: "TheCompany",
 };
 </script>

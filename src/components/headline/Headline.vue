@@ -30,5 +30,4 @@ export default{
     }
     
 }
-// import "../../assets/images/"
 </script>
