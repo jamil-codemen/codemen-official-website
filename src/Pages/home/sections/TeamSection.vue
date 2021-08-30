@@ -2,6 +2,7 @@
   <section class="md:px-24 px-0 py-24">
     <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
       <div class="">
+        <!------------------------------header section ------------------------------------------>
         <div class="title text-center">
           <div class="w-full space-y-6">
               <custom-header headerClass="font-bold text-4xl text-gray-800" firstSpan="Our " SecondSpan="Team" blockSecond></custom-header>
@@ -12,6 +13,7 @@
             </p>
           </div>
         </div>
+        <!------------------------------team card  section ------------------------------------------>
         <div class="row justify-center">
           <div
             class="group mt-16 px-4 w-full md:w-1/2 lg:w-1/4"
@@ -25,6 +27,7 @@
             ></team-card>
           </div>
         </div>
+        <!------------------------------button section ------------------------------------------>
         <div class="mt-16 flex justify-center">
           <custom-button
             buttonClass="bg-green-500 hover:bg-gray-900 font-bold text-white"

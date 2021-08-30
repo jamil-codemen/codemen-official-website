@@ -7,23 +7,7 @@
             Introduction Video
           </p>
         </div>
-        <h2
-          class="
-            text-center
-            uppercase
-            leading-loose
-            md:leading-tight
-            text-4xl
-            font-black
-            text-gray-700
-            mt-1.5
-          "
-        >
-          Advisory
-          <span class="prm-color rounded px-4 pb-3 pt-2"
-            ><span class="text-white">Performance</span></span
-          >
-        </h2>
+        <custom-header headerClass="font-black text-4xl text-gray-800 text-center leading-8" firstSpan="Advisory " SecondSpan="Performance" blockSecond></custom-header>
       </div>
       <div class="">
         <div class="text-gray-700 py-8 text-center">
@@ -36,7 +20,7 @@
       </div>
       <div class="text-center mt-6">
         <div class="relative flex items-center justify-center">
-          <!----------------------------------------------------------------------------------------------->
+          <!---------------------------------------------vedio-------------------------------------------------->
           <v-card class="">
             <video
                 id="vedioElement"
@@ -153,7 +137,9 @@
 </div>
 </template>
 <script>
+import CustomHeader from '../customHeader/CustomHeader.vue';
 export default {
+  components: { CustomHeader },
     data(){
         return {
             vedioElement:null,

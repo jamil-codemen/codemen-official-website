@@ -2,6 +2,7 @@
     <section class="py-24">
         <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
             <div class="row">
+                <!-----------------------------------success story part ------------------------------------------------->
                 <div class="lg:w-3/4 w-full align-self-top sm:text-left text-center pl-4 md:pr-8 pr-4">
                     <div class="">
                         <div class="w-full">
@@ -9,9 +10,7 @@
                                 <p class="uppercase text-green-500 font-bold text-lg py-4">A success story
                                 </p>
                             </div>
-                            <h2 class="uppercase md:leading-tight text-4xl font-black  mt-1.5"><span
-                                    class="prm-color rounded px-4 pb-3 pt-2"><span class="text-white">Who</span></span>
-                                We Are</h2>
+                                <custom-header headerClass="font-bold text-4xl text-gray-800" firstSpan="who" SecondSpan=" We Are" blockFirst></custom-header>
                         </div>
                     </div>
                     <div class="pt-8">
@@ -39,6 +38,7 @@
                         </div>
                     </div>
                 </div>
+                <!-----------------------------------Occupation Area part ------------------------------------------------->
                 <div class="lg:w-1/4 w-full align-self-top sm:text-left text-center items-center pr-4 md:pl-8 pl-4">
                     <div class="md:mt-14 mt-8 ">
                         <h4 class="text-3xl font-semibold mb-8">Occupation Area</h4>
@@ -109,7 +109,9 @@
     </section>
 </template>
 <script>
+import CustomHeader from '@/components/customHeader/CustomHeader.vue'
 export default {
+  components: { CustomHeader },
     name:'SuccessStory',
     setup() {
         

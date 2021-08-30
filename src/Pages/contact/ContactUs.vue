@@ -1,11 +1,14 @@
 <template>
+<!------------------------headline section ----------------------------------------------------->
   <headline
     imgSource="contact-bg.jpg"
     currentLink="/contact-us"
     currentPageName="Contact Us"
   ></headline>
+  <!------------------------contact form section ----------------------------------------------------->
   <contact-form/>
-<div class="md:px-24 px-0 pb-24 mt-16">
+    <!------------------------Promotion card section ----------------------------------------------------->
+  <div class="md:px-24 px-0 pb-24 mt-16">
       <promotion-card></promotion-card>
     </div>
 </template>
