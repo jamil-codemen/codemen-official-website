@@ -8,7 +8,7 @@ import ErrorPage from "../Pages/errorPage/ErrorPage.vue"
 import  Login from "../Pages/login/Login.vue"
 import ForgotPassword from "../Pages/forgotPassword/ForgotPassword.vue"
 import Dashboard from "../Pages/dashboard/Dashboard.vue"
-import AddMember from "../Pages/dashboard/component/AddMember.vue"
+import MemberList from "../Pages/dashboard/sections/MemberList.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -46,7 +46,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path:'/addmember',
         name:'AddMember',
-        component : AddMember
+        component : MemberList
       },
     ]
 
