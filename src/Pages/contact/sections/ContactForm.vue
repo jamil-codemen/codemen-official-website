@@ -15,52 +15,80 @@
             We will respond to your message as soon as possible.
           </p>
           <div class="w-full mt-12">
-            <form action="php/form.php">
+             <!-------------------------------form section---------------------------------------------------->
+            <form action="php/form.php" @submit.prevent="submitForm()">
               <div class="row">
+                <!------------------------------------ name input ------------------------------------------------->
                 <div class="sm:w-1/2 w-full px-4 py-3">
                   <custom-input-field
-                    inputClass="bg-green-50  border border-green-50 focus:border-green-200 "
+                    :inputClass=" !isNameValid ?' bg-red-100  border border-red-200 ':'bg-green-50  border border-green-50 focus:border-green-200'"
                     inputName="name"
                     inputPlaceholder="Name"
                     inputType="text"
+                    v-model="userName"
+                    @blur="nameValidityCheck"
+                    @focus="isNameValid=true"
                   ></custom-input-field>
+                  <small class="text-xs text-red-600 pt-1" :class=" !isNameValid ? 'block':'hidden'">Enter name of more than 3 Characters</small>
                 </div>
+                <!------------------------------------ email input ------------------------------------------------->
                 <div class="sm:w-1/2 w-full px-4 py-3">
                   <custom-input-field
-                    inputClass="bg-green-50  border border-green-50 focus:border-green-200 "
-                    inputName="name"
+                      :inputClass=" !isEmailValid ?' bg-red-100  border border-red-200 ':'bg-green-50  border border-green-50 focus:border-green-200'"
+                    inputName="email"
                     inputPlaceholder="Email"
                     inputType="email"
+                    v-model="userEmail"
+                    @blur="emailValidityCheck"
+                    @focus="isEmailValid=true"
                   ></custom-input-field>
+                    <small class="text-xs text-red-600 pt-1" :class=" !isEmailValid ? 'block':'hidden'">Enter valid Email address</small>
                 </div>
+                <!------------------------------------ phone input ------------------------------------------------->
                 <div class="sm:w-1/2 w-full px-4 py-3">
                   <custom-input-field
-                    inputClass="bg-green-50  border border-green-50 focus:border-green-200 "
+                      :inputClass=" !isPhoneValid ?' bg-red-100  border border-red-200 ':'bg-green-50  border border-green-50 focus:border-green-200'"
                     inputName="phone"
                     inputPlaceholder="Phone"
-                    inputType="text"
+                    inputType="tel"
+                    v-model="userPhone"
+                    @blur="phoneValidityCheck"
+                    @focus="isPhoneValid=true"
                   ></custom-input-field>
+                    <small class="text-xs text-red-600 pt-1" :class=" !isPhoneValid ? 'block':'hidden'">Enter a valid phone number</small>
                 </div>
+                <!------------------------------------ subject input ------------------------------------------------->
                 <div class="sm:w-1/2 w-full px-4 py-3">
                   <custom-input-field
-                    inputClass="bg-green-50  border border-green-50 focus:border-green-200 "
+                  :inputClass=" !isSubjectValid ?' bg-red-100  border border-red-200 ':'bg-green-50  border border-green-50 focus:border-green-200'"
                     inputName="subject"
                     inputPlaceholder="Subject"
                     inputType="text"
+                    v-model="messageSubject"
+                    @blur="subjectValidityCheck"
+                    @focus="isSubjectValid=true"
                   ></custom-input-field>
+                    <small class="text-xs text-red-600 pt-1" :class=" !isSubjectValid ? 'block':'hidden'">Enter a subject of your message</small>
                 </div>
               </div>
+              <!------------------------------------ message input ------------------------------------------------->
               <div class="w-full py-3">
                 <custom-input-field
                   isTextArea
-                  inputClass="bg-green-50  border border-green-50 focus:border-green-200 "
+                   :inputClass=" !isMessageValid ?' bg-red-100  border border-red-200 ':'bg-green-50  border border-green-50 focus:border-green-200'"
                   inputName="message"
                   inputPlaceholder="Message"
                   inputType="text"
                   textAreaRows="6"
+                  v-model="message"
+                  @blur="messageValidityCheck"
+                    @focus="isMessageValid=true"
                 ></custom-input-field>
+                  <small class="text-xs text-red-600 pt-1" :class=" !isMessageValid ? 'block':'hidden'">Please write a message to sent</small>
               </div>
+              <!------------------------------------ submit button  ------------------------------------------------->
               <custom-button
+                type='submit'
                 buttonClass="bg-green-500 text-white hover:bg-gray-900 my-12 font-bold"
                 content="Submit"
               ></custom-button>
@@ -242,6 +270,79 @@ export default {
     CustomInputField,
     CustomHeader,
   },
+  data(){
+    return{
+      userName:'',
+      userEmail:'',
+      userPhone:null,
+      messageSubject:'',
+      message:'',
+      isNameValid:true,
+      isEmailValid:true,
+      isPhoneValid:true,
+      isSubjectValid:true,
+      isMessageValid:true
+    }
+  },
+  methods:{ 
+
+    //checking if name is longer than 3 characters
+    nameValidityCheck(){
+      if(this.userName.trim().length<3){
+        this.isNameValid=false
+        
+      }else{
+        this.isNameValid=true
+      }
+    },
+
+    //checking if the email is valid
+     emailValidityCheck(){
+      if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.userEmail)){
+        this.isEmailValid=true
+        
+      }else{
+        this.isEmailValid=false
+      }
+    },
+
+    //checking if the phone number is valid
+        phoneValidityCheck(){
+      if(/^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g.test(this.userPhone) && this.userPhone.trim().length>=8){
+        this.isPhoneValid=true
+        
+      }else{
+        this.isPhoneValid=false
+      }
+    },
+    //checking is thier is any subject
+    subjectValidityCheck(){
+      if(this.messageSubject.trim()===''){
+        this.isSubjectValid=false
+        
+      }else{
+        this.isSubjectValid=true
+      }
+    },
+
+    //checking if there is any message
+    messageValidityCheck(){
+      if(this.message.trim()==='' || /<.+?>/g.test(this.message)){
+        this.isMessageValid=false
+        
+      }else{
+        this.isMessageValid=true
+      }
+    },
+    
+    submitForm(){
+      console.log(this.userName);
+      console.log(this.userEmail);
+      console.log(this.userPhone);
+      console.log(this.messageSubject);
+      console.log(this.message);
+    }
+  }
 };
 </script>
 <style scoped>

@@ -17,17 +17,22 @@
               </p>
             </div>
             <!----------------------------------- form section ------------------------------------------------->
-            <form action="" class="py-6">
+            <form action="" class="py-6" @submit.prevent="submitForm()">
+              <!--------------------------------  email input ------------------------------------------>
               <label for="email" class="text-gray-800 font-semibold"
                 >Email</label
               >
               <custom-input-field
-                inputClass="bg-green-50  border border-green-50 focus:border-green-200 mt-3 mb-6 rounded"
+                  :inputClass=" !isEmailValid ?' bg-red-100  border border-red-200 my-2 rounded':'bg-green-50  border border-green-50 focus:border-green-200 my-2 rounded'"
                 inputName="email"
                 inputPlaceholder="mail@gmail.com"
                 inputType="email"
+                 v-model="email"
+                @blur="emailCheck"
+                @focus="isEmailValid=true"
               ></custom-input-field>
-
+               <small class="text-xs text-red-600 pt-1"  :class=" !isEmailValid ? 'block':'hidden'">Please enter a valid email</small>
+             <!--------------------------------  submit section  ------------------------------------------>
               <div class="flex justify-center">
                 <button
                   type="submit"
@@ -40,7 +45,7 @@
                     text-white
                     hover:bg-gray-900
                     font-bold
-                    mt-3
+                    mt-5
                     w-full
                   "
                 >
@@ -90,5 +95,29 @@ import CustomButton from "@/components/button/CustomButton.vue";
 export default {
   components: { customInputField, CustomButton },
   name: "ForgotPassword",
+  data(){
+    return {
+      email:'',
+      isEmailValid :true,
+    }
+  },
+  methods:{
+     //checking if email is valid 
+     emailCheck(){
+      if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.email)){
+        this.isEmailValid=true
+        
+      }else{
+        this.isEmailValid=false
+      }
+    },
+      //submitting login form
+
+    submitForm(){
+      if (this.isEmailValid) {
+      console.log(this.email)
+    }
+    },
+  }
 };
 </script>

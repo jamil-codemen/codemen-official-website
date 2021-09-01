@@ -6,7 +6,7 @@
     custom
   >
     <div
-      class="py-4 px-8 rounded sm:w-52 w-full text-center" :class="buttonClass"
+      class="py-4 px-8 rounded sm:w-52 w-full text-center cursor-pointer" :class="buttonClass"
     >
       <a :href="linkAddress" target="_blank" class="md:text-lg text-md uppercase leading-8">{{ content }}</a>
     </div>
@@ -14,8 +14,9 @@
   <!-------------------------------------  button component    -------------------------------------------->
   <button
     v-else
-    class="py-4 px-8 rounded sm:w-52 w-full text-center"
+    class="py-4 px-8 rounded sm:w-52 w-full text-center cursor-pointer"
     :class="buttonClass"
+    :type="type"
   >
     <span class="md:text-lg text-md uppercase leading-8">{{ content }}</span>
   </button>
@@ -28,6 +29,7 @@ export default {
     isLink: Boolean,
     linkAddress: String,
     content: String,
+    type:String
   },
 };
 </script>

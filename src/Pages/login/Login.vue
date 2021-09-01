@@ -15,23 +15,38 @@
               <p class="text-gray-700">Please sign in to your account.</p>
             </div>
             <!----------------------------------- form section ------------------------------------------------->
-            <form action="" class="py-6">
-              <label for="email" class="text-gray-800 font-semibold">Email</label>
-              <custom-input-field
-                inputClass="bg-green-50  border border-green-50 focus:border-green-200 mt-3 mb-6 rounded"
+            <form action="" class="py-6" @submit.prevent="submitForm()">
+                <!------------------------------------ email input ------------------------------------------------->
+              <div class="mt-2 mb-3">
+                 <label for="email" class="text-gray-800 font-semibold">Email</label>
+                <custom-input-field
+                  :inputClass=" !isEmailValid ?' bg-red-100  border border-red-200 my-2 rounded':'bg-green-50  border border-green-50 focus:border-green-200 my-2 rounded'"
                 inputName="email"
                 inputPlaceholder="mail@gmail.com"
                 inputType="email"
+                v-model="email"
+                @blur="emailCheck"
+                @focus="isEmailValid=true"
               ></custom-input-field>
-              <label for="password" class="text-gray-800 font-semibold"
+              <small class="text-xs text-red-600 pt-1"  :class=" !isEmailValid ? 'block':'hidden'">Please enter a valid email</small>
+              </div>
+                <!------------------------------------ password input ------------------------------------------------->
+             <div class="mt-2 mb-3">
+                <label for="password" class="text-gray-800 font-semibold"
                 >Password</label
               >
               <custom-input-field
-                inputClass="bg-green-50  border border-green-50 focus:border-green-200 mt-3 mb-6 rounded"
+                 :inputClass=" !isPasswordValid ?' bg-red-100  border border-red-200 my-2 rounded':'bg-green-50  border border-green-50 focus:border-green-200 my-2 rounded'"
                 inputName="password"
                 inputPlaceholder="Enter your password"
                 inputType="password"
+                v-model="password"
+                @blur="passwordCheck"
+                @focus="isPasswordValid=true"
               ></custom-input-field>
+               <small class="text-xs text-red-600 pt-1"  :class=" !isPasswordValid ? 'block':'hidden'">Password must contain minimum eight characters, at least one letter, one number and one special character</small>
+             </div>
+               <!------------------------------------ checkbox section ------------------------------------------------->
               <div class="flex justify-between items-center">
                 <div class="flex items-center">
                   <input
@@ -46,6 +61,7 @@
                   <router-link to="/forgotPassword">Forgot your password?</router-link>
                 </div>
               </div>
+                <!------------------------------------ submit section  ------------------------------------------------->
               <div class="flex justify-center">
                 <button
                 type="submit"
@@ -67,5 +83,46 @@ import CustomButton from "@/components/button/CustomButton.vue";
 export default {
   components: { customInputField, CustomButton },
   name: "Login",
+  data(){
+    return{
+        email:'',
+        password:null,
+        isEmailValid :true,
+        isPasswordValid:true,
+    }
+  },
+  methods:{
+
+    //checking if email is valid 
+     emailCheck(){
+      if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.email)){
+        this.isEmailValid=true
+        
+      }else{
+        this.isEmailValid=false
+      }
+    },
+
+    //checking if password is valid 
+
+    passwordCheck(){
+      if(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(this.password)){
+        this.isPasswordValid=true
+        
+      }else{
+        this.isPasswordValid=false
+      }
+    },
+    
+    //submitting login form
+
+    submitForm(){
+      if (this.isEmailValid&& this.isPasswordValid) {
+      console.log(this.email)
+      console.log(this.password)
+    }
+    },
+    
+  }
 };
 </script>
