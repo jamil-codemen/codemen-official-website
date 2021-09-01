@@ -7,6 +7,8 @@ import MainPage from "../Pages/mainPage/MainPage.vue"
 import ErrorPage from "../Pages/errorPage/ErrorPage.vue"
 import  Login from "../Pages/login/Login.vue"
 import ForgotPassword from "../Pages/forgotPassword/ForgotPassword.vue"
+import Dashboard from "../Pages/dashboard/Dashboard.vue"
+import AddMember from "../Pages/dashboard/component/AddMember.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -35,6 +37,19 @@ const routes: Array<RouteRecordRaw> = [
         component: About
       },
     ]
+  },
+  {
+    path:'/dashboard',
+    name:'Dashboard',
+    component : Dashboard,
+    children:[
+      {
+        path:'/addmember',
+        name:'AddMember',
+        component : AddMember
+      },
+    ]
+
   },
   {
     path:"/login",
