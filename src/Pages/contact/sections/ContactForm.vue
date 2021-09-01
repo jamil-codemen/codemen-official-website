@@ -10,7 +10,7 @@
               Send a message
             </p>
           </div>
-          <custom-header headerClass="font-black text-4xl text-gray-800" firstSpan="Get in " SecondSpan="Touch" blockSecond></custom-header>
+          <custom-header headerClass="font-black text-4xl text-gray-800 md:text-left text-center" firstSpan="Get in " SecondSpan="Touch" blockSecond></custom-header>
           <p class="mt-10 text-gray-700 text-xl sm:text-left text-center">
             We will respond to your message as soon as possible.
           </p>
@@ -233,12 +233,14 @@
 <script>
 import CustomButton from "@/components/button/CustomButton.vue";
 import CustomInputField from "@/components/customInputField/customInputField.vue";
+import CustomHeader from '@/components/customHeader/CustomHeader.vue';
 
 export default {
   name: "ContactForm",
   components: {
     CustomButton,
     CustomInputField,
+    CustomHeader,
   },
 };
 </script>

@@ -5,6 +5,8 @@ import About from "../Pages/about/About.vue"
 import ContactUs from "../Pages/contact/ContactUs.vue"
 import MainPage from "../Pages/mainPage/MainPage.vue"
 import ErrorPage from "../Pages/errorPage/ErrorPage.vue"
+import  Login from "../Pages/login/Login.vue"
+import ForgotPassword from "../Pages/forgotPassword/ForgotPassword.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -33,6 +35,16 @@ const routes: Array<RouteRecordRaw> = [
         component: About
       },
     ]
+  },
+  {
+    path:"/login",
+    name:"Login",
+    component: Login
+  },
+  {
+    path:"/forgotPassword",
+    name:"ForgotPassword",
+    component: ForgotPassword
   },
   {
     path:'/error',
