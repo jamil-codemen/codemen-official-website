@@ -9,3 +9,9 @@
         @apply flex flex-wrap w-row -mx-4;
     }
 }
+.loginBg {
+    background-image: url(../assets/images/login3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

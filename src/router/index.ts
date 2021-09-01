@@ -5,9 +5,14 @@ import About from "../Pages/about/About.vue"
 import ContactUs from "../Pages/contact/ContactUs.vue"
 import MainPage from "../Pages/mainPage/MainPage.vue"
 import ErrorPage from "../Pages/errorPage/ErrorPage.vue"
+
 import Dashboard from "../Pages/dashboard/Dashboard.vue"
 import CreateMember from "../Pages/dashboard/component/CreateMember.vue"
 import ViewMember from "../Pages/dashboard/component/ViewMember.vue"
+
+import  Login from "../Pages/login/Login.vue"
+import ForgotPassword from "../Pages/forgotPassword/ForgotPassword.vue"
+
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -38,6 +43,7 @@ const routes: Array<RouteRecordRaw> = [
     ]
   },
   {
+
     path:'/dashboard',
     name:'Dashboard',
     component : Dashboard,
@@ -53,6 +59,17 @@ const routes: Array<RouteRecordRaw> = [
         component : ViewMember
       },
     ]
+  },
+  {
+      path:"/login",
+    name:"Login",
+    component: Login
+  },
+  {
+    path:"/forgotPassword",
+    name:"ForgotPassword",
+    component: ForgotPassword
+
   },
   {
     path:'/error',
