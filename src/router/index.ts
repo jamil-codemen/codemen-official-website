@@ -5,6 +5,9 @@ import About from "../Pages/about/About.vue"
 import ContactUs from "../Pages/contact/ContactUs.vue"
 import MainPage from "../Pages/mainPage/MainPage.vue"
 import ErrorPage from "../Pages/errorPage/ErrorPage.vue"
+import Dashboard from "../Pages/dashboard/Dashboard.vue"
+import CreateMember from "../Pages/dashboard/component/CreateMember.vue"
+import ViewMember from "../Pages/dashboard/component/ViewMember.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -35,6 +38,23 @@ const routes: Array<RouteRecordRaw> = [
     ]
   },
   {
+    path:'/dashboard',
+    name:'Dashboard',
+    component : Dashboard,
+    children:[
+      {
+        path:'/addmember',
+        name:'CreateMember',
+        component : CreateMember
+      },
+      {
+        path:'/viewmember',
+        name:'ViewMember',
+        component : ViewMember
+      },
+    ]
+  },
+  {
     path:'/error',
     name:'ErrorPage',
     component : ErrorPage
@@ -43,6 +63,9 @@ const routes: Array<RouteRecordRaw> = [
     path:'/:pathMatch(.*)*',
     redirect:'/error'
   }
+ 
+ 
+ 
   
 ]
 
@@ -54,12 +77,4 @@ const router = createRouter({
 export default router
 
 
-// {
-//   path: '/about',
-//   name: 'About',
-//   // route level code-splitting
-//   // this generates a separate chunk (about.[hash].js) for this route
-//   // which is lazy-loaded when the route is visited.
-//   component: () => import(/* webpackChunkName: "about" */ '../components/Pages/aboutus.vue')
-// }
 
