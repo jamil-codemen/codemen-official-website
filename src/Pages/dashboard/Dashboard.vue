@@ -78,7 +78,7 @@ About
           Add Member
        
         </router-link>
-        <router-link to="/viewmember">
+        <router-link to="/addmember">
           <a
           href="#"
           :class="{'hidden':dropdown}"
@@ -89,7 +89,7 @@ About
         </router-link>
         <router-link to="/" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
        
-          Tutorials
+          View Officials
        
         </router-link>
         <router-link to="/" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
