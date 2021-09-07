@@ -1,6 +1,5 @@
 <template>
-<top-bar/>
-   <member-table/> 
+
   <div style="text-align: left;">
     <h3 class="text-lg text-blue-900 mb-6">User Table</h3>
     <label class="text-base mr-2">Search User</label><input class="px-2 py-2 border border-blue-600 rounded-md" v-model="searchTerm" />
@@ -16,8 +15,7 @@
   ></table-lite>
 </template>
 <script>
-import TopBar from '../component/TopBar.vue'
-import MemberTable from '../component/MemberTable.vue'
+
 import TableLite from '../component/TableLite.vue'
 import { defineComponent, reactive, ref, computed } from "vue";
 //this is sample dataset 1 but it has no effect the table we are viewing
@@ -48,9 +46,7 @@ const sampleData2 = (offst, limit) => {
 export default defineComponent ({
     name:'MemberList',
     components:{
-        MemberTable,
         TableLite,
-        TopBar
     },
     setup() {
     ////////////////////////////
