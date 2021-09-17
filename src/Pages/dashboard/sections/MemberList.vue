@@ -1,11 +1,10 @@
-<template> 
+<template>
   <h3 class="text-lg text-white mb-6 px-4 py-3 bg-blue-900">
-          User Table
-        </h3>
+    User Table
+  </h3>
   <div class="flex flex-wrap">
     <div class="w-1/2">
       <div>
-        
         <label class="text-base mr-2">Search User</label
         ><input
           class="px-2 py-2 border border-blue-600 rounded-md focus:outline-none"
@@ -16,11 +15,31 @@
     <div class="w-1/2">
       <div class="flex justify-end">
         <div>
-          <p class="px-4 py-3 bg-blue-900 text-white rounded">Add Member</p>
+          <button
+            @click="showModal"
+            class="px-4 py-3 bg-blue-900 text-white rounded"
+          >
+            Add Member
+          </button>
         </div>
       </div>
     </div>
   </div>
+  <Modal v-show="isModalVisible" @close="closeModal">
+    <template v-slot:header>
+      Add User Form
+    </template>
+
+    <template v-slot:body>
+      <p>asdasdasd</p>
+      <input type="text">
+    </template>
+    
+
+    <template v-slot:footer>
+      Need me?
+    </template>
+  </Modal>
   <table-lite
     :is-static-mode="true"
     :has-checkbox="true"
@@ -34,6 +53,7 @@
 <script>
 import TableLite from "../component/TableLite.vue";
 import { defineComponent, reactive, ref, computed } from "vue";
+
 //this is sample dataset 1 but it has no effect the table we are viewing
 //we will remove it --
 const sampleData1 = (offst, limit) => {
@@ -59,16 +79,31 @@ const sampleData2 = (offst, limit) => {
   }
   return data;
 };
+import Modal from "../component/Modal.vue";
 export default defineComponent({
   name: "MemberList",
   components: {
     TableLite,
+    Modal,
+  },
+  data() {
+    return {
+      isModalVisible: false,
+    };
+  },
+  methods: {
+    showModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    },
   },
   setup() {
     ////////////////////////////
     //
     //
-    
+
     const table = reactive({
       isLoading: false,
       isReSearch: false,
@@ -191,7 +226,6 @@ export default defineComponent({
               '<button type="button" data-id="' +
               row.user_id +
               '" class="is-rows-el quick-btn text-blue-900 text-sm font-bold">Delete</button>'
-              
             );
           },
         },
