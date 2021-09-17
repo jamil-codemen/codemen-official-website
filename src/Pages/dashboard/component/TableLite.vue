@@ -674,7 +674,7 @@ tr {
   color: white;
   background-color: #686868;
   border-color: #D3D3D3;
-   border-radius: 5px;
+  
 }
 .table-bordered thead td,
 .table-bordered thead th {
