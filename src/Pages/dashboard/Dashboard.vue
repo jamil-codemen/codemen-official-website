@@ -73,11 +73,7 @@ About
         >
           Members
         </a>
-        <router-link to="/addmember"  :class="{'hidden':dropdown}" class="block py-0.5 px-6 rounded transition duration-200 hover:bg-blue-700 hover:text-white">
-      
-          Add Member
        
-        </router-link>
         <router-link to="/addmember">
           <a
           href="#"

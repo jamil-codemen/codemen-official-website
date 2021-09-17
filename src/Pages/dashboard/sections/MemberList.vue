@@ -1,8 +1,25 @@
-<template>
-
-  <div style="text-align: left;">
-    <h3 class="text-lg text-blue-900 mb-6">User Table</h3>
-    <label class="text-base mr-2">Search User</label><input class="px-2 py-2 border border-blue-600 rounded-md" v-model="searchTerm" />
+<template> 
+  <h3 class="text-lg text-white mb-6 px-4 py-3 bg-blue-900">
+          User Table
+        </h3>
+  <div class="flex flex-wrap">
+    <div class="w-1/2">
+      <div>
+        
+        <label class="text-base mr-2">Search User</label
+        ><input
+          class="px-2 py-2 border border-blue-600 rounded-md focus:outline-none"
+          v-model="searchTerm"
+        />
+      </div>
+    </div>
+    <div class="w-1/2">
+      <div class="flex justify-end">
+        <div>
+          <p class="px-4 py-3 bg-blue-900 text-white rounded">Add Member</p>
+        </div>
+      </div>
+    </div>
   </div>
   <table-lite
     :is-static-mode="true"
@@ -15,8 +32,7 @@
   ></table-lite>
 </template>
 <script>
-
-import TableLite from '../component/TableLite.vue'
+import TableLite from "../component/TableLite.vue";
 import { defineComponent, reactive, ref, computed } from "vue";
 //this is sample dataset 1 but it has no effect the table we are viewing
 //we will remove it --
@@ -43,21 +59,19 @@ const sampleData2 = (offst, limit) => {
   }
   return data;
 };
-export default defineComponent ({
-    name:'MemberList',
-    components:{
-        TableLite,
-    },
-    setup() {
+export default defineComponent({
+  name: "MemberList",
+  components: {
+    TableLite,
+  },
+  setup() {
     ////////////////////////////
     //
     //
+    
     const table = reactive({
       isLoading: false,
       isReSearch: false,
-     
-      
-     
     });
     const doSearch = (offset, limit, order, sort) => {
       table.isLoading = true;
@@ -77,20 +91,20 @@ export default defineComponent ({
       }, 600);
     };
     /**
-     * 
      *
-     * @param Collection 
+     *
+     * @param Collection
      */
     const tableLoadingFinish = (elements) => {
       table.isLoading = false;
-      Array.prototype.forEach.call(elements, function (element) {
+      Array.prototype.forEach.call(elements, function(element) {
         if (element.classList.contains("name-btn")) {
-          element.addEventListener("click", function () {
+          element.addEventListener("click", function() {
             console.log(this.dataset.id + " name-btn click!!");
           });
         }
         if (element.classList.contains("quick-btn")) {
-          element.addEventListener("click", function () {
+          element.addEventListener("click", function() {
             console.log(this.dataset.id + " quick-btn click!!");
           });
         }
@@ -102,16 +116,16 @@ export default defineComponent ({
       console.log(rowsKey);
     };
     //
-    //  Table2 
+    //  Table2
     const searchTerm = ref(""); // (Search text)
-    const data = reactive([]);  // (Fake data)
+    const data = reactive([]); // (Fake data)
     for (let i = 0; i < 126; i++) {
       data.push({
         id: i,
         name: "Codemen Engineer" + i,
         email: "codemen" + i + "@example.com",
-        date:'19/11/1991',
-        role:'Employee'
+        date: "19/11/1991",
+        role: "Employee",
       });
     }
     const table2 = reactive({
@@ -128,7 +142,7 @@ export default defineComponent ({
           field: "name",
           width: "15%",
           sortable: true,
-          display: function (row) {
+          display: function(row) {
             return (
               '<a href="#" data-id="' +
               row.user_id +
@@ -146,13 +160,13 @@ export default defineComponent ({
         },
         {
           label: "Date Joined",
-          field:"date",
+          field: "date",
           width: "15%",
           sortable: true,
         },
         {
           label: "Role",
-          field:"role",
+          field: "role",
           width: "10%",
           sortable: true,
         },
@@ -160,7 +174,7 @@ export default defineComponent ({
           label: "Action",
           field: "quick",
           width: "10%",
-          display: function (row) {
+          display: function(row) {
             return (
               '<button type="button" data-id="' +
               row.user_id +
@@ -172,11 +186,12 @@ export default defineComponent ({
           label: "Action",
           field: "quick",
           width: "10%",
-          display: function (row) {
+          display: function(row) {
             return (
               '<button type="button" data-id="' +
               row.user_id +
               '" class="is-rows-el quick-btn text-blue-900 text-sm font-bold">Delete</button>'
+              
             );
           },
         },
@@ -211,6 +226,5 @@ export default defineComponent ({
       updateCheckedRows,
     };
   },
-    
-})
+});
 </script>
