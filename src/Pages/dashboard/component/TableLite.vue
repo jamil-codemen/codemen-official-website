@@ -9,7 +9,7 @@
       >
         <div class="row"></div>
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 overflow-x-scroll">
             <div class="row"></div>
             <div v-if="isLoading" class="loading-mask">
               <div class="loading-content">
