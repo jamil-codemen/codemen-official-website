@@ -56,30 +56,33 @@ import { defineComponent, reactive, ref, computed } from "vue";
 
 //this is sample dataset 1 but it has no effect the table we are viewing
 //we will remove it --
-const sampleData1 = (offst, limit) => {
-  offst = offst + 1;
-  let data = [];
-  for (let i = offst; i <= limit; i++) {
-    data.push({
-      id: i,
-      name: "Test" + i,
-      email: "Test" + i + "@example.com",
-    });
-  }
-  return data;
-};
-const sampleData2 = (offst, limit) => {
-  let data = [];
-  for (let i = limit; i > offst; i--) {
-    data.push({
-      id: i,
-      name: "Codemen Engineer" + i,
-      email: "codemen" + i + "@example.com",
-    });
-  }
-  return data;
-};
+// const sampleData1 = (offst, limit) => {
+//   offst = offst + 1;
+//   let data = [];
+//   for (let i = offst; i <= limit; i++) {
+//     data.push({
+//       id: i,
+//       name: "Test" + i,
+//       email: "Test" + i + "@example.com",
+//     });
+//   }
+//   return data;
+// };
+// const sampleData2 = (offst, limit) => {
+//   let data = [];
+//   for (let i = limit; i > offst; i--) {
+//     data.push({
+//       id: i,
+//       name: "Codemen Engineer" + i,
+//       email: "codemen" + i + "@example.com",
+//     });
+//   }
+//   return data;
+// };
+
 import Modal from "../component/Modal.vue";
+import { useStore } from "vuex";
+import store from "@/store";
 export default defineComponent({
   name: "MemberList",
   components: {
@@ -91,19 +94,26 @@ export default defineComponent({
       isModalVisible: false,
     };
   },
+  // computed:{
+  //   Team(){
+  //     return this.$store.state.Team;
+  //   }
+  //   },
   methods: {
     showModal() {
       this.isModalVisible = true;
+      console.log(store.state.Team)
     },
     closeModal() {
       this.isModalVisible = false;
     },
   },
+ 
   setup() {
     ////////////////////////////
     //
     //
-
+    const store = useStore()
     const table = reactive({
       isLoading: false,
       isReSearch: false,
@@ -116,7 +126,7 @@ export default defineComponent({
           limit = 20;
         }
         if (sort == "asc") {
-          table.rows = sampleData1(offset, limit);
+          table.rows = sampleData2(offset, limit);
         } else {
           table.rows = sampleData2(offset, limit);
         }
@@ -154,13 +164,14 @@ export default defineComponent({
     //  Table2
     const searchTerm = ref(""); // (Search text)
     const data = reactive([]); // (Fake data)
-    for (let i = 0; i < 126; i++) {
+    const myTeam =store.state.Team
+    for (let i = 0; i < myTeam.length; i++) {
       data.push({
         id: i,
-        name: "Codemen Engineer" + i,
+        name: myTeam[i].employeeName ,
         email: "codemen" + i + "@example.com",
         date: "19/11/1991",
-        role: "Employee",
+        role: myTeam[i].employeeRole,
       });
     }
     const table2 = reactive({
